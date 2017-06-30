@@ -3,19 +3,21 @@ import pandas
 from bs4 import BeautifulSoup
 
 myLevels = [
-    35,
-    30,
-    25,
-    25,
-    25,
-    25,
-    25,
-    25,
-    25,
-    25,
-    25,
-    25,
-    25,
+    50, # Sandbag Slam
+    50, # Jump Counter
+    50, # Dwebble Push
+    50, # Timber
+    50, # Balloon Blow
+    50, # Boldore Push
+    50, # Ball Smash
+    50, # Rock Cruncher
+    50, # Power Generator
+    50, # Forretress Push
+    50, # Poke Ball Smash
+    50, # Frost Cruncher
+    50, # Soccer Ball Juggle
+    50, # Golem Push
+    0, # Soccer Ball Smash
 ]
 actual_training = 0
 
@@ -29,13 +31,13 @@ if (page.status_code == 200):
         columns=(
             'Training',
             'Level',
-            'Production',
+            'Jump Power (JP)',
             'C25',
             'C50',
             'C75',
             'CtM (Cost to Max)',
-            'IiP (Increase In Production)',
-            'CtM/IiP'
+            'IiJP (Increase In JP)',
+            'CtM/IiJP'
         )
     )
 

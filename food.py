@@ -3,19 +3,21 @@ import pandas
 from bs4 import BeautifulSoup
 
 myLevels = [
-    50,
-    50,
-    50,
-    50,
-    50,
-    50,
-    50,
-    50,
-    50,
-    50,
-    50,
-    60,
-    94,
+    50, # Oran Berry
+    50, # Sitrus Berry
+    50, # Pecha Berry
+    50, # Rindo Berry
+    50, # Wacan Berry
+    50, # Leppa Berry
+    50, # Rawst Berry
+    50, # Aspear Berry
+    50, # Razz Berry
+    50, # Bluk Berry
+    50, # Lava Cookie
+    60, # Shalour Sable
+    94, #  Lumiose Galette
+    25, # Castelia Cone
+    0, # Magikarp Biscuit
 ]
 actual_berry = 0
 
@@ -29,13 +31,13 @@ if (page.status_code == 200):
         columns=(
             'Berry',
             'Level',
-            'Production',
+            'Jump Power (JP)',
             'C25',
             'C50',
             'C75',
             'CtM (Cost to Max)',
-            'IiP (Increase In Production)',
-            'CtM/IiP'
+            'IiJP (Increase In JP)',
+            'CtM/IiJP'
         )
     )
 
